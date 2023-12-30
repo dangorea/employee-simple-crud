@@ -1,4 +1,4 @@
-package com.luv2code.springboot.cruddemo.entity;
+package com.dango.springboot.cruddemo.entity;
 
 import jakarta.persistence.*;
 
@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name="employee")
 public class Employee {
 
-    // define fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
@@ -22,7 +21,6 @@ public class Employee {
     private String email;
 
 
-    // define constructors
     public Employee() {
 
     }
@@ -32,8 +30,6 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
-
-    // define getter/setter
 
     public int getId() {
         return id;
@@ -67,7 +63,6 @@ public class Employee {
         this.email = email;
     }
 
-    // define toString
     @Override
     public String toString() {
         return "Employee{" +
